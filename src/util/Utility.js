@@ -1,9 +1,9 @@
 "use strict";
 const Button = require("../data/Button");
 const SetNavigationButtonOutMessage = require("../outmessages/SetNavigationButtonOutMessage");
+import Constant from '../../constant.json';
 
-
-class Utils {
+class Utils{
 
     static formatDurationInMinsAndSeconds(duration) {
         let durationInMinsAndSeconds = null;
@@ -18,12 +18,14 @@ class Utils {
     }
 
     setNavigationButton(chatId, nextMenu, api){
+        console.log("Inside setNavigationButton function");
         let fb = new Button();
         fb.next_menu = nextMenu;
         let navMsg = new SetNavigationButtonOutMessage();
         navMsg.chat_id = chatId;
-        navMsg.navigation_button = fb;
-
+        navMsg.navigation_buttons = [];
+        navMsg.navigation_buttons.push(fb);
+        
         api.send(JSON.stringify(navMsg));
     }
 
@@ -69,5 +71,5 @@ var generate = () => {
 
 module.exports = {
     Utility: Utils,
-    Id: generate,
+    Id: generate
 }

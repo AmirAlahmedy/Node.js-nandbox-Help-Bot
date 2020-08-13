@@ -1,0 +1,13 @@
+{
+	"CREATE_CHANNEL_MEDIA_LINK": "https://youtu.be/RjKEoXE9lxg",
+	"CREATE_GROUP_MEDIA_LINK": "https://youtu.be/x3Whu4AJT6k",
+    "DELETE_GROUP_MEDIA_LINK": "https://youtu.be/g-__ARL1gng",
+	"RECALL_MSG_MEDIA_LINK": "https://youtu.be/QW3jwOigpsM",
+	"USE_STICKERS_MEDIA_LINK": "https://youtu.be/qrjQYQVJ1ak",
+    "DOWNLOAD_STICKERS_MEDIA_LINK": "https://youtu.be/JlNyDSngMFo",
+	"SHARE_LOCATION_MEDIA_LINK": "https://youtu.be/JT5jqkYV3uM",
+	"FAQ_LINK": "https://nandbox.com/faq",
+    "MAIN_MENU_REF": "MainMenu",
+    "CHANNELS_MENU_REF": "ChannelMenu",
+    "STICKERS_MENU_REF": "StickersMenu"
+}
